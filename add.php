@@ -1,8 +1,8 @@
 <?php
-    $servername = "localhost";
-    $username = "id21859149_admin";
-    $password = "12345Asdfg@";
-    $dbname = "id21859149_dbshop";
+    $servername = "laithshop2-server.mysql.database.azure.com";
+    $username = "eacuejguun";
+    $password = "B5USI06N14277B18$";
+    $dbname = "laithshop2-database";
     
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
