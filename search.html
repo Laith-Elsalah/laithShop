@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Business Web App - Search</title>
+</head>
+<body>
+    <header>
+        <h1>Laith Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                  <li class="nav-button"><a href="add-product.html"><button onclick="redirectToProductForm()">Add Product</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="searchForm" style="padding-bottom: 33%;" action="view.php" method="post">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search" placeholder="Enter your search">
+            <button type="submit">Search</button>
+        </form>
+        <div id="searchResults"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Laith shop. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
