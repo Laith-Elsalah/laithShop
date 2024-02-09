@@ -26,7 +26,7 @@
         while ($row = $result->fetch_assoc()) {
             echo "<div class='card' style =' width: 100%; border-bottom: 1px solid #333; padding:15px 0'>";
             echo "<img src='" . $row["ProductImageURL"] . "' alt='ProductImageURL' style='width:300px; height:300px;'>";
-            echo "<p>Product Name: " . $row["ProductName"] . " - Category: " . $row["Category"] . " , Description: " . $row["descriptionP"] . " Price: " . $row["Price"] . "</p>";
+            echo "<p>Product Name: " . $row["ProductName"] . " - Category: " . $row["pcategory"] . " , Description: " . $row["descriptionP"] . " Price: " . $row["Price"] . "</p>";
             echo "</div>";
         }
     } else {
