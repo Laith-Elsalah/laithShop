@@ -19,7 +19,7 @@
         
         $searchWord = $_POST['search'];
     
-        $sqlquery = "select * from products where Category= '$searchWord'"; //filter based on Category
+        $sqlquery = "select * from products where pcategory= '$searchWord'"; //filter based on Category
     
         $result = $conn->query($sqlquery);
 
