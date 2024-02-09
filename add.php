@@ -33,7 +33,7 @@
         
         
         
-        $sqlquery = "INSERT INTO products (ProductName, Category, descriptionP, Price, ProductImageURL) VALUES ('$productName','$productCategory' , '$productDescription' , '$productPrice' , '$productImage')";
+        $sqlquery = "INSERT INTO products (ProductName, pcategory, descriptionP, Price, ProductImageURL) VALUES ('$productName','$productCategory' , '$productDescription' , '$productPrice' , '$productImage')";
         $result = mysqli_query($conn, $sqlquery);
         if ($result) {
             $msg = "record inserted successfully";
