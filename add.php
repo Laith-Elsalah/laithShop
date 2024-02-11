@@ -22,10 +22,13 @@
         $productPrice = $_REQUEST['productPrice'];
         $productImage = $_REQUEST['productImage'];
 
+        
         // Validate productName using preg_match
-        if (!preg_match("/^[A-Za-z]+$/", $productName)) {
-            die("Error: Product Name should contain only letters.");
-        }
+if (!preg_match("/^[A-Za-z0-9_\-\' ]+$/", $productName)) {
+    die("Error: Product Name should contain only letters, numbers, spaces, underscores, hyphens and apostrophes.");
+}
+
+        
         // Validate productCategory using preg_match
         if (!preg_match("/^(men|women)$/i", $productCategory)) {
             die("Error: Product Category should be 'men' or 'women'.");
